@@ -11,6 +11,7 @@ function nestedEvenSum (obj) {
             result += nestedEvenSum(obj[keysArr[i]])
         } else if (typeof obj[keysArr[i]] === 'number') {
             if (obj[keysArr[i]] % 2 === 0){
+            //add the even value of object property to result
             result += obj[keysArr[i]];
             }
         }
