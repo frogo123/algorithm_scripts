@@ -9,6 +9,7 @@ function nestedEvenSum (obj) {
         //if obj[keysArr[i]] is another Object implement nestEvenSum again using obj[keysArr[i]]
         if (obj[keysArr[i]] instanceof Object){
             result += nestedEvenSum(obj[keysArr[i]])
+            //else if value is a number
         } else if (typeof obj[keysArr[i]] === 'number') {
             if (obj[keysArr[i]] % 2 === 0){
             //add the even value of object property to result
