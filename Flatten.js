@@ -1,5 +1,4 @@
 function nestedEvenSum (obj, result = 0) {
-    //let result = 0;
     let keysArr;
     if (obj instanceof Object){
     keysArr = Object.keys(obj);
