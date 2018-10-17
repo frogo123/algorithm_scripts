@@ -3,8 +3,9 @@ function mergeSort(arr1, arr2) {
     let newArr = [];
     let i = 0;
     let j = 0;
-    while(i != arr1.length && j != arr2.length ) {
-        if (arr1[i] < arr2[j]){
+//loop through arrays until one is exhausted of elements
+    while(i < arr1.length && j < arr2.length ) {
+        if (arr1[i] <= arr2[j]){
             newArr.push(arr1[i]);
             i++;
         }
@@ -14,6 +15,7 @@ function mergeSort(arr1, arr2) {
         }
         
     }
+//loop through the elements of the remaining array
     if (i === arr1.length){
         while(j !== arr2.length){
         newArr.push(arr1[j]);
