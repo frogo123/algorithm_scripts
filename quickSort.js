@@ -8,6 +8,7 @@ function swap(array, indexOne, indexTwo) {
     return array;
 }
 
+//recursive sorting function
 function quickSortFunction(i, array, pivotIndex, endIndex) {
     //recurCheck is set to the start of the loop to compare later to counter 
     //used to swap pivotIndex if swaps have been made
